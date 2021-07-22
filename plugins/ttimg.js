@@ -254,7 +254,7 @@ Asena.addCommand({pattern: 'vtext ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-Asena.addCommand({pattern: 'emoji ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'emoji ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
         
